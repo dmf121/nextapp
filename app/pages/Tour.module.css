@@ -1,0 +1,259 @@
+@import url('https://fonts.cdnfonts.com/css/segoe-script');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+
+
+.tourContainer {
+    max-width: 1300px;
+    padding: 0 10px;
+    margin: auto;
+}
+
+
+.tour {
+    box-sizing: border-box;
+    min-height: 1350px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    background: linear-gradient(to top, black 94%, white 7%);
+}
+
+.tour::before {
+    content: "";
+    position: absolute;
+    top: 100px; 
+    left: 0;
+    width: 100%; 
+    height: 100%;  
+    opacity: 0.5; 
+    z-index: -1;
+    background-image: url('/tour_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+  }
+
+.tour-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    z-index: -5;
+    background-color: black;
+}
+
+.tour-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.4;
+}
+
+
+.tourCards {
+    max-width: 1300px;
+    margin: auto;
+    position: relative;
+    padding: 0 15px;
+}
+
+.outter {
+    display: flex;
+    overflow: hidden;
+    margin: auto;
+    height: 800px;
+
+    position: relative;
+}
+
+
+.inner {
+    display: flex;
+    gap: 30px;
+    transition: 0.2s all;
+}
+
+
+.inner::-webkit-scrollbar {
+    display: none;
+}
+
+
+.tourCard {
+    width: 370px;
+    height: 600px;
+    background-color: #fff;
+}
+
+.tourCardPrice h2 {
+    font-size: 15px;
+    white-space: nowrap;
+}
+
+.tourCardImg {
+    height: 370px;
+    width: 100%;
+}
+
+.tourCardImg img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.tourCardDescription {
+    display: flex;
+    padding: 20px 15px;
+    gap: 10px;
+    box-sizing: border-box;
+}
+
+.cardBottom {
+    display: flex;
+    height: 50px;
+    padding: 10px 15px;
+    justify-content: space-between;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.bookingTrigger {
+    width: 100px;
+    height: 30px;
+
+    background-color: #ef5b5b;
+    border-radius: 5px;
+    border: 1px solid #ef5b5b;
+    display: grid;
+    place-items: center;
+    white-space: nowrap;
+      
+    color: #fff;
+    font-family: Montserrat;
+    font-size: calc(min(3vw, 14px));
+    line-height: 26px;
+    font-weight: 700;
+}
+
+.bookingTrigger:hover {
+    background-color: #fff;
+    color: #ef5b5b;
+}
+
+.cardBottomBtn {
+    display: flex;
+    align-items: center;
+}
+
+
+.prev {
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: 30%;
+}
+
+.next {
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    top: 30%;
+}
+
+
+
+
+
+
+.tourInputs {
+    display: grid;
+    gap: 1px;
+    grid-template-columns: 100%;
+    max-width: 100%;
+    margin: 30px 0 100px;
+    padding: 20px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+@media (min-width: 1120px) {
+    .tourInputs {
+        grid-template-columns: repeat(5, 1fr);
+        height: 100px;
+    }
+
+    .tourInputBtn button {
+        width: 100px;
+    }
+}
+
+.tourInput {
+    box-sizing: border-box;
+    background-color: var(--clr-white);
+    opacity: 1;
+    position: relative;
+}
+
+.tourInput, .tourInputBtn {
+    z-index: 100;
+    height: 60px;
+    box-sizing: border-box;
+}
+
+.tourInputBtn button {
+    width: 100%;
+    height: 60px;
+    background-color: #ef5b5b;
+    border-radius: 5px;
+    border: 1px solid #ef5b5b;
+    display: grid;
+    place-items: center;
+    white-space: nowrap;
+      
+    color: #fff;
+    font-family: Montserrat;
+    font-size: calc(min(3vw, 14px));
+    line-height: 26px;
+    font-weight: 700;
+}
+
+.tourInput input {
+    height: 100%;
+    width: 100%;
+    padding: 20px 40px;
+    color: var(--clr-gray);
+    box-sizing: border-box;
+}
+
+.tourInput input[type=date]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
+.tourInput i {
+    position: absolute;
+    left: 15px;
+    top: 40%;
+    color: #ef5b5b;
+}
+
+.tourInputsOverlay {
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    z-index: 0;
+}
+
+.tourInputBtn button {
+    border-radius: 0;
+}
+

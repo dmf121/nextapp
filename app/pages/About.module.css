@@ -1,0 +1,103 @@
+@import url('https://fonts.cdnfonts.com/css/segoe-script');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+
+.about {
+    background-color: #f0efef;
+}
+
+.provideContainer {
+    max-width: 1300px;
+    padding: 0 10px;
+    margin: auto;
+}
+
+.provideCards {
+    display: flex;
+}
+
+.provideCardsInner {
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap;
+    transition: 0.5s all;
+}
+
+.provideCardsOutter {
+    display: flex;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.provideCard {
+    box-sizing: border-box;
+    display: block;
+    width: 340px;
+    height: 340px;
+    padding: 50px 20px;
+    border: 1px solid gray;
+    text-align: center;
+    background-color: #fff;
+}
+
+@media (max-width: 475px) {
+    .provideCard {
+        width: 255px;
+        height: auto;
+        padding: 20px 10px 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .provideCard {
+        width: 180px;
+    }
+}
+
+.provideCard h1 {
+    margin-bottom: 20px;
+}
+
+
+
+.provideCardImg {
+    display: grid;
+    place-items: center;
+    margin-bottom: 55px;
+}
+
+.chooseCards {
+    display: grid;
+    gap: 30px;
+    margin: 0 50px;
+    padding-bottom: 150px;
+}
+
+
+.chooseCard {
+    background-color: #fff;
+    padding: 28px;
+}
+
+@media (min-width: 950px) {
+    .chooseCards {
+        grid-template-columns: 1fr 1fr;
+        margin: 0;
+    }
+    .chooseCard {
+        padding: 28px 88px 28px 28px;
+    }
+}
+
+@media (max-width: 450px) {
+    .chooseCards {
+        margin: 0;
+    }
+    .chooseCard {
+        padding: 15px;
+    }
+}
+

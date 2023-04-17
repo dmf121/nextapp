@@ -1,0 +1,122 @@
+.placesCards {
+    margin-top: 45px;
+    display: grid;
+    gap: 20px;
+    margin-bottom: 150px;
+}
+
+.placesCardImg {
+    min-width: 130px;
+    height: 130px;
+    padding: 20px 25px;
+}
+
+.placesCardTitle {
+    margin: 15px 0 20px;
+}
+
+@media (min-width: 1100px) {
+    .placesCards {
+        gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .placesCardImg {
+        min-width: 200px;
+        height: 200px;
+        padding: 30px 35px;
+    }
+    .placesCardTitle {
+        margin: 40px 0 20px;
+    }
+}
+
+
+
+
+.placesCard {
+    display: flex;
+}
+
+
+
+.placesCardImg img {
+    width: 100%;
+    height: 100%;
+}
+
+.placesCardList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 0;
+}
+
+.placesCardList li {
+    line-height: 12px;
+    list-style: none;
+}
+
+
+
+
+.placesBottom {
+    width: 100%;
+    height: 400px;
+    background-color: #ef5b5b;
+}
+
+.placesContainer {
+    height: 100%;
+    
+}
+
+.placesBottomContent {
+    height: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 550px) {
+    .placesBottomContent {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+    .placesBottom {
+        height: 250px;
+    }
+}
+
+@media (min-width: 930px) {
+    .placesBottomContent {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+.placesBottomCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.placesBottomCardImg {
+    box-sizing: border-box;
+    padding: 0px 10px;
+    display: grid;
+    place-items: center;
+}
+
+.placesBottomCardText {
+    display: grid;
+    place-items: center;
+    
+}
+
+
+
+.placesBottomH1, .placesBottomP {
+    color: #fff;
+}

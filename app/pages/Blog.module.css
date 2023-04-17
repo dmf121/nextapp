@@ -1,0 +1,88 @@
+@import url('https://fonts.cdnfonts.com/css/segoe-script');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+.blogCard {
+    margin: auto;
+}
+
+.blogCardImg {
+    width: 95%;
+    height: 220px;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.blogCardImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blogCardContent {
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.blogCardBottom {
+    margin-top: 5px;
+    padding: 0 20px 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.blogCards {
+    display: grid;
+    gap: 50px;
+    margin: 50px 0 70px;
+    overflow: hidden;
+    height: 810px;
+}
+
+@media (min-width: 1050px) {
+    .blogCards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 650px) {
+    .blogCards{
+        height: 490px;
+    }
+    .blogCard {
+        display: flex;
+    }
+    .blogCardImg {
+        width: calc(min(40%, 200px));
+    }
+    .blogCardContent {
+        width: calc(100% - 200px);
+    }
+}
+
+.blogContentBtn {
+    width: 150px;
+    height: 35px;
+    margin: 0 auto 200px;
+}
+
+.blogCardsExpanded {
+    height: auto;
+}
+
+.blog-btn a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    line-height: 35px;
+}
+
+.blog-btn {
+    line-height: 35px;
+}
